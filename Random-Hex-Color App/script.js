@@ -1,9 +1,12 @@
-const number = document.querySelector('.number');
-const btn = document.querySelector('.generate');
+const hex = document.querySelector('.hex');
+const button = document.querySelector('.generate');
 
-const generateNumber = () => {  
-  const randomNumber = Math.floor(Math.random() * 100);
-  number.innerHTML = randomNumber;
+//const button = document.querySelector('.reset');
+
+const generateColor = () => {
+  const randomColor = Math.random().toString(16).substring(2,8);
+  document.body.style.backgroundColor = "#" + randomColor;
+  hex.innerHTML = "#" + randomColor;
 }
 
-btn.addEventListener('click', generateNumber);  
+button.addEventListener( 'click', generateColor);
