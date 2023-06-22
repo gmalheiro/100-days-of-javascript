@@ -85,4 +85,5 @@ p.result{
   font-size: 2rem;
   font-weight: 600;
   color: var(--dark-grey);
+  display: none;
 }
